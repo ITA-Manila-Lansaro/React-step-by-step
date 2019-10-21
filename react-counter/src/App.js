@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Number from './Number';
+
 
 
 
@@ -9,7 +11,7 @@ class App extends React.Component {
 
   constructor (props){
     super (props);
-    this.state = {value : 0};
+    this.state = {};
   }
 
   render () {
@@ -21,7 +23,7 @@ class App extends React.Component {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <button onClick = {this.increaseNumber}><h1>Hello World</h1></button>
-        <h1>Number: {this.state.value}</h1>
+        <Number/>
         <a
           className="App-link"
           href="https://reactjs.org"
