@@ -10,9 +10,18 @@ class Number extends React.Component{
 
     render(){
         return(
-            <h1>Number: 0 </h1>
+            <div>
+            <button onClick = {this.increaseNumber}>
+                <h1>Hello World</h1>
+            </button>
+            <h1>Number: {this.state.value} </h1>
+            </div>
         );
     }
+
+    increaseNumber = () => {
+        this.setState({value: this.state.value + 2});
+      }
 }
 
 

@@ -11,7 +11,6 @@ class App extends React.Component {
 
   constructor (props){
     super (props);
-    this.state = {};
   }
 
   render () {
@@ -22,7 +21,6 @@ class App extends React.Component {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <button onClick = {this.increaseNumber}><h1>Hello World</h1></button>
         <Number/>
         <a
           className="App-link"
@@ -37,9 +35,7 @@ class App extends React.Component {
   );
 }
 
-increaseNumber = () => {
-  this.setState({value: this.state.value + 1});
-}
+
 
 }
 
