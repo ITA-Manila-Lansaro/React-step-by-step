@@ -10,7 +10,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <button><h1>Hello World</h1></button>
+        <button onClick = {alertMe}><h1>Hello World</h1></button>
         <h1>Number: 0</h1>
         <a
           className="App-link"
@@ -23,6 +23,10 @@ function App() {
       </header>
     </div>
   );
+}
+
+function alertMe (){
+  alert("now you know how to handle onclick event");
 }
 
 export default App;
